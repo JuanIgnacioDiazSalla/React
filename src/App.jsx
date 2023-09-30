@@ -1,15 +1,15 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import MiNavBar from './components/navbar/NavBar'
-import Contenedor from './components/ItemListConteiner/ItemListConteiner'
+import MainRouter from './routes/MainRouter'
+import { CartProvider } from '../src/context/CartContext'
+
 
 function App() {
 
   return (
-    <div>
-      <MiNavBar />
-      <Contenedor greeting="Bienvenidos" />
-    </div>
+    <CartProvider>
+      <MainRouter />
+    </CartProvider>
   )
 }
 

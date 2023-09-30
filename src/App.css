@@ -1,5 +1,25 @@
 body {
-  align-content: flex-start
+  align-content: flex-start;
+
+}
+
+.miNavBar {
+  text-decoration: none;
+  font-size: large;
+}
+
+
+
+.tituloNavBar {
+  font-size: xx-large;
+}
+
+.contenedorBienvenida {
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
 }
 
 #root {
@@ -11,19 +31,59 @@ body {
 .logoCarrito {
   width: 10%;
   height: auto;
-  margin-right: 5%;
 
 }
 
 .carrito {
   display: inline-flex;
+  width: 100%;
+  font-size: xx-large;
+  justify-content: end;
+}
+
+.carritoEspecifico {
+  display: inline-flex;
+  width: 100%;
+  font-size: xx-large;
+  justify-content: end;
+  padding-right: 2%;
 }
 
 .contenedor {
   width: 100%;
+  height: auto;
   display: flex;
-  justify-content: center;
-  font-size: 50%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: oblique;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.item {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto;
+  margin-top: 1%;
+  padding: auto;
+}
+
+.itemButton {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.itemImg {
+  width: 250px;
+  margin: auto;
 }
